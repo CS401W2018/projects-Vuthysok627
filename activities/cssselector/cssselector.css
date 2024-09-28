@@ -16,9 +16,9 @@ main.bigger {
     font-family: jokeerman;
 
 }
-.bolder bolder {
+.bolder {
     font-weight: 300;
-    color: darkgreen 
+    color: rgb(9, 94, 9);
 }
 .maintop
 {
