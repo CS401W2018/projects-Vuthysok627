@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(215, 224, 246, 0.105);
+    font-family:  'Courier New', monospace;
+    color: darkgreen;
+}
+
+nav {
+    color: black;
+}
+main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ h1 {
+    font-family: 'Brush Script MT', cursive;
+    color: gray
+};
+ 
+
+.green 
+{
+color: green;
+font-size: 10px;
+}
+
+.red
+{
+color:red;
+font-size: 10px;
+
+}
+
+.blue
+{
+color:blue;
+font-size: 10px;
+
+}
+
+footer {
+    color:gray
+ }
