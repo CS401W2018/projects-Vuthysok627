@@ -19,23 +19,17 @@ main {
 .green 
 {
 color: green;
-font-size: 10px;
 }
 
-.red
-{
-color:red;
-font-size: 10px;
 
+.bolder {
+    color:yellowgreen;
+    font-style: italic;
 }
-
-.blue
-{
-color:blue;
-font-size: 10px;
-
-}
-
 footer {
-    color:gray
+    color: blue
  }
+H2 {
+    Color: #F09B59
+
+}
