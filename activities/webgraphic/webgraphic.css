@@ -1,13 +1,25 @@
 body
 .size {
-    color: pink;
+    color: rgb(192, 255, 218);
     font-family: Arial,Helvetica, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    background-color: rgb(2, 16, 21);
 
 
+#doggy {
+        height: 500;
+    }
+    
+    
 }
 
+header {
+    background-position: top right; 
+    background-repeat: no-repeat;
+    background-image: url("ankorwat.jpg");
+    background-size: 100px;
+}
 #red {
     color: rgb(94, 15, 28);
     font-family: Arial,Helvetica, sans-serif;
