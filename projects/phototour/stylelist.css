@@ -1,19 +1,20 @@
 
 .current {
-    color: white);
+    color: white;
     font-size: larger;
     forced-color-adjust: lightgreen;
+    font-family: cursive;
 }
 .welcome {
     
     font-family: 'Brush Script MT', cursive;
+    color: green;
 }
 
 
 body {
-    background-image: url("colorful.avif");
+    background-image: url("Light-Blue.jpg");
     background-repeat: repeat-x;
-    color: #222200;
 }
    
 
@@ -23,10 +24,15 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
     color:lightcoral
+
     
 }
 
 p {
     color: black;
     font-size: 20px;
+}
+.center {
+    background-position: right;
+    background-size: 50px;
 }
