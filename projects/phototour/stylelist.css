@@ -14,7 +14,7 @@
 
 body {
     background-image: url("Light-Blue.jpg");
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
 }
    
 
@@ -35,4 +35,16 @@ p {
 .center {
     background-position: right;
     background-size: 50px;
+
+}
+
+.list {
+    list-style: square;
+    color:white
+
+}
+
+.w {
+    color: gray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
