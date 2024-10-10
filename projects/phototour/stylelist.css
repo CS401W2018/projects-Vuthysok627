@@ -39,9 +39,9 @@ p {
 }
 
 .list {
-    list-style: square;
-    color:white
-
+    list-style-image:url('star.jpg');
+    color:white;
+    display: inline-block;
 }
 
 .w {
