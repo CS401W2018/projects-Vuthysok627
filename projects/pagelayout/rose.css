@@ -1,0 +1,138 @@
+body{
+    background-color: skyblue;
+    font-family: 'Arial', sans-serif;
+    padding: 20opx;
+    border: 20px solid greenyellow;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    border: 100px ;
+    background-color:rgb(232, 255, 192);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #00ffd5;
+    border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+ 
+nav ul{
+    list-style-type:none;
+}
+
+nav li{
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 5px;
+    background-color: white;
+    border-bottom: thin solid white;
+    margin-left: 50px;
+    width: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50px;
+    border: 5px solid rgb(10, 50, 6);
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+main {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  
+}
+
+p{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+    font-style: italic;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #888;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+}
+
+@media only screen and (min-width: 1200px){
+.example{
+    width: 100px;
+    border: thin solid black;
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+    font-size: larger;
+}
+.float-right{
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(128, 240, 145);
+    height: 50px;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 1000px rgba(130, 21, 21, 0.2);
+    border-radius: 100px;
+    width: 200px;
+
+}
+}
+
+.clear{
+    clear:right;
+}
