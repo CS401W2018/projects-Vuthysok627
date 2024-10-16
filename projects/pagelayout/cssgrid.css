@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Container{
+    background-color: aqua;
+    padding: 5px;
+    display: grid;
+    grid-template-columns:  1fr 5fr 1fr;
+    grid-template-areas: 
+    "hearder hearder hearder"
+    "lside main rside"
+    "footer footer footer";
+}
+.item{
+    background-color: lightblue;
+    border: thin solid;
+}
+.itemA {
+    grid-area: lside;
+}
+
+.itemB {
+    grid-area: rside;
+}
+.itemC {
+    grid-area: main;
+}
+
