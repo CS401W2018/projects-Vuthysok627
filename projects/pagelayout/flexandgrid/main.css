@@ -1,0 +1,36 @@
+body{
+    background-color:yellow;
+}
+header{
+    background-color: white;
+}
+header h1 {
+    margin: 0;
+nav {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+
+}
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card {
+    width: 200px;
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(red, green, blue, alpha);
+    margin: 7px;
+
+}
+.card img{
+    width: 100%;
+}

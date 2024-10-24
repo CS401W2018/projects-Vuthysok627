@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("A.jpg");
 }
 header h1{
 background-color: palevioletred;

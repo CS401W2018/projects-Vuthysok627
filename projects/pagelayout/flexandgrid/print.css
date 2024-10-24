@@ -1,0 +1,48 @@
+body {
+    background-image: url("A.jpg");
+    font-size: medium;
+    color: darkgoldenrod;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+.card figure{
+    margin: 0;
+}
+
+.card img{
+    width: 100;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: rgb(150, 97, 229);
+    display: flex; /* Change from none to flex */
+    justify-content: space-around;
+    
+}
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+@media only screen and {max-width: 600px) {
+    nav{
+        background-color: #222;
+    }
+}
+    
+}
