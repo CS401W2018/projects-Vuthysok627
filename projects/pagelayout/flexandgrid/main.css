@@ -1,36 +1,46 @@
-body{
-    background-color:yellow;
+body {
+    background-color: yellow;
 }
-header{
+
+header {
     background-color: white;
 }
+
 header h1 {
     margin: 0;
+}
+
 nav {
     background-color: aquamarine;
     display: flex;
     justify-content: space-around;
 }
+
 nav a {
     display: block;
     padding: 5px 10px;
     color: #fff;
     text-decoration: none;
+}
 
+.container {
+    display: flex; /* Assuming you want to use flex properties */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
 }
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .card {
     width: 200px;
     border: thin solid black;
-    box-shadow: 3px 3px 3px rgba(red, green, blue, alpha);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); 
     margin: 7px;
-
 }
-.card img{
+
+.card img {
     width: 100%;
 }
+
+.middle {
+    order: -1; 
+}
+

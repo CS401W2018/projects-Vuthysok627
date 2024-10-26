@@ -1,5 +1,5 @@
 body {
-    background-image: url("A.jpg");
+    /*background-image: url("A.jpg");*/
     font-size: medium;
     color: darkgoldenrod;
     font-family: 'Times New Roman', Times, serif;
@@ -24,12 +24,14 @@ header h1 {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: warp;
 }
 
 nav {
     background-color: rgb(150, 97, 229);
     display: flex; /* Change from none to flex */
     justify-content: space-around;
+    
     
 }
 
@@ -39,10 +41,21 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
-@media only screen and {max-width: 600px) {
-    nav{
-        background-color: #222;
+@media screen and (max-width: 800px) {
+        /*background-color: #222;*/
+        nav{
+            flex-direction: column;
+        
+            
+        }
+        nav a{
+            border-bottom: thin solid #fff;
+        }
+        .card{
+            width: 100%;
+            margin: 10px;
+        }
+
     }
-}
-    
-}
+       
+ 
