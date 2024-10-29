@@ -1,0 +1,145 @@
+header h1{
+    color: red;
+    
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    flex: 0 0 25%; /* 25% width */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.sidebar figure {
+    text-align: center;
+}
+
+/* Main Styles */
+main {
+    flex: 1; /* Fill remaining space */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between articles */
+}
+
+article {
+    flex: 1 1 calc(33.333% - 20px); /* Three articles in a row */
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+ .container{
+    flex-direction: column;
+    
+ }
+    .column {
+        flex-direction: column;
+      }
+    nav ul{
+
+        flex-direction: column;
+    }
+    .sidebar {
+        flex: 0 0 100%; /* Full width on small screens */
+    }
+    .sidebar {
+        flex: 100%;
+        max-width: 100%;
+      }
+    main {
+        flex-direction: column; /* Stack articles vertically */
+    }
+
+    article {
+        flex: 100%; /* Full width articles */
+    }
+    
+}
+
+@media print {
+    header, footer, nav {
+        display: none; /* Hide header, footer, and nav in print */
+    }
+
+    .container {
+        flex-direction: column; /* Stack sidebar and main content */
+    }
+
+    .sidebar {
+        display: none; /* Optionally hide sidebar for print */
+    }
+
+    main {
+        display: block; /* Ensure main content displays block for print */
+    }
+
+    article {
+        margin: 0; /* Remove margins for articles in print */
+        padding: 10px; /* Adjust padding for print */
+    }
+}
+
