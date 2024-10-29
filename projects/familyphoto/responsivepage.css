@@ -117,6 +117,9 @@ footer {
     article {
         flex: 100%; /* Full width articles */
     }
+    footer{
+        text-align: left;
+    }
     
 }
 
