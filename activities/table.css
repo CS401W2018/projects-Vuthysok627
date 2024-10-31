@@ -1,0 +1,28 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Schedule {
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+}
+.Schedule td, .Schedule th{
+    margin: 5px auto;
+    border: thin solid black;
+    padding: 10px ;
+}
+.Schedule thead{
+    background-color: brown;
+    color: white;
+}
+
+.Schedule tbody tr:nth-child(odd){
+    background-color: lavenderblush;
+    color: black;
+}
+.Schedule tfoot{
+    background-color: brown;
+    color: black;
+}
