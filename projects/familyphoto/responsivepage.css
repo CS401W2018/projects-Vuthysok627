@@ -1,9 +1,6 @@
 header h1{
-    color: red;
+    color: blueviolet;
     
-}
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -15,6 +12,13 @@ body{
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
+}
+ h2{
+color: lightcoral;
+}
+p{
+font-family: Arial, Helvetica, sans-serif;
+color:black;
 }
 
 /* Header Styles */
@@ -46,20 +50,26 @@ nav ul li a {
 .container {
     display: flex;
     margin: 20px;
+
 }
 
 /* Sidebar Styles */
 aside {
     width: 25%; /* 25% width */
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 aside figure {
     text-align: left;
     width: 100%;
 }
-
+figcaption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    font-size: large;
+    padding: 10px;
+}
 
 /* Main Styles */
 main {
@@ -75,6 +85,7 @@ article {
     background: #eaeaea;
     padding: 15px;
     border-radius: 8px;
+    text-align: center;
 }
 
 article img {
