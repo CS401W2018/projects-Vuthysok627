@@ -1,15 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-   
-
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: darkred;
-    text-align: center;
-   
-    margin: 0;
 }
+   
 nav {
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
@@ -28,13 +21,7 @@ nav ul li a {
         color: white;
         text-decoration: none;
     }
-}
-.sidebar{
-    font-family: 'Times New Roman', Times, serif;
-    width: 250px;
-    margin-right: 20px;
-    img: 25%;
-}
+
 .container{
     margin: 20px;
 }
@@ -62,3 +49,16 @@ tbody tr:nth-child(even) {
     color: white;
 }
 
+.container{
+    display: flex;
+    gap: 20px;
+    
+
+}
+main{
+    width: 80%;
+}
+.aside {
+width: 20%;
+
+}
