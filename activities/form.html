@@ -8,42 +8,93 @@
 </head>
 <body>
     <header>
-        <h1> Web Designe</h1>
+        <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post"><br><br>
-          First Name:<input type="text"name="first" value="VUTHY" required="required"> <br><br>
-          Last Name:<input type="text"name="last" placeholder="Lastname"><br><br>
-          password: <input type="password"name=" pass"><br><br>
-          Month: <input type="month" name="month"> <br><br>
-          Search: <input type="search" name="search"> <br><br>
-          <input type="submit">
-          <input type="checkbox" name="Remember Me" checked> Remember Me<br><br>
-           <input type="radio" name="grade" value="Freshman"> Freshman<br><br>
-           <input type="radio" name="grade" value="Freshman"> Sophermore<br><br>
-           <input type="radio" name="grade" value="Freshman"> Junior<br><br>
-           <input type="radio" name="grade" value="Freshman"> Senoir<br><br>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Sign Up Now!</legend>
 
-           <select name="state" id="state">
-            <option value="blank"></option>
-            <option value="Hawaii"> Hawaii</option>
-            <option value="California">California</option>
-            <option value="Utha">Utha</option>
-           </select> <br><br>
-           <textarea name="comment" id=""></textarea>
-           <input type="submit">
-        
+                <div class="form-row">
+                    <label for="firstnameInput">First Name:</label> 
+                    <input type="text" name="firstname" id="firstnameInput" placeholder="First Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="lastnameInput">Last Name:</label>
+                    <input type="text" name="lastname" id="lastnameInput" placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" name="email" id="emailInput" placeholder="Email">
+                </div>
+
+                <div class="form-row">
+                    <label for="passwordInput">Password:</label>
+                    <input type="password" id="passwordInput" placeholder="Password">
+                </div>
+
+                <div class="form-row">
+                    <label for="birthdateInput">Birth Date:</label>
+                    <input type="date" id="birthdateInput">
+                </div>
+
+                <div class="form-row">
+                    <label for="searchInput">Search:</label>
+                    <input type="search" id="searchInput" placeholder="Search">
+                </div>
+
+                <div class="form-row">
+                    <label for="submitBtn"></label>
+                    <input type="submit" id="submitBtn" value="Sign Up!">
+                </div>
+
+                <div class="check-row">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="form-row">
+                    <label><input type="checkbox" name="agree" value="on" checked> I agree to the terms of condition.</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" placeholder="Write your comment here"></textarea>
+                </div>
+
+            </fieldset>
         </form>
+
         <h2>The form tag has an "action" attribute. What does it do?</h2>
-        <p> Action attribute is the action to be display when the users click submit and the server read the file and release the result.</p>
-        
+        <p>The action attribute defines the URL where the form data will be sent for processing when the form is submitted.</p>
+
         <h2>The form tag has a "method" attribute. What does it do?</h2>
-        <p> The method attribute send signal to the serve. For example using a value of post means the brower only send data to the web server to be processed and keep data more safe such as password.</p>
-        <h2> What is the difference between a "Post" and a "Get?</h2>
-        <p> They are quite similar,but post is more safe to keep the date when it is sent to the webe server such as secure our password </p>
-    </main>
-    <footer> &copy; 2024 VUTHY SOK</footer>
-   
+        <p>The method attribute determines how the form data will be sent to the server. The "POST" method sends data securely, while "GET" sends data in the URL.</p>
+
+        <h2>What is the difference between "Post" and "Get"?</h2>
     
+        <p>POST sends data in the body of the request, which makes it more secure, especially for sensitive data like passwords. GET appends data to the URL, making it visible in the browser's address bar.</p>
+        <h2>What are different ways to style your form?</h2>
+        <p>
+          Color, font, background, padding, size...
+        </p>
+        <h2>Why does the professor like to use flex?</h2>
+        <p> To make the form in vertical and align with other text.</p>
+    </main>
+
+    <footer> &copy; 2024 VUTHY SOK</footer>
 </body>
 </html>
