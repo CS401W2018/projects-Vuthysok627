@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="pform.css">
+</head>
+<body>
+    <form action="processing.html" method="post">
+        
+            <main>
+                <fieldset>
+                    <legend>Registration Form:</legend>
+                <p>Personal Information</p>
+                
+                <div class="form-row"> 
+                    <label for="firstnameInput">First Name:</label> 
+                    <input type="text" name="firstname" id="firstnameInput" placeholder="First Name" required>
+                </div>
+                
+                <div class="form-row"> 
+                    <label for="lastnameInput">Last Name:</label>
+                    <input type="text" name="lastname" id="lastnameInput" placeholder="Last Name" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="birthdateInput">Birth Date:</label>
+                    <input type="date" id="birthdateInput" name="birthdate" required>
+                </div>
+                
+                <div class="form-row"> 
+                    <label for="passwordInput">Password:</label>
+                    <input type="password" name="password" id="passwordInput" placeholder="Password" required>
+                </div>
+                <div class="form-row"> 
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                </div>
+                
+                <div class="form-row"> 
+                    <label for="emailInput">Enter Your Email Address:</label>
+                    <input type="email" name="email" id="emailInput" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="check-row"> 
+                    <div class="spacer"></div>
+                    <label for="rememberMe">Remember Me</label>
+                    <input type="checkbox" id="rememberMe" name="rememberMe"> 
+                </div>
+                
+                <div class="form-row"> 
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="Female" id="femaleGender"> Female
+                    <input type="radio" name="gender" value="Male" id="maleGender"> Male
+                </div>
+                
+                <div class="form-row"> 
+                    <label for="subjectSelect">Select Your Course:</label>
+                    <select name="subject" id="subjectSelect" required>
+                        <option value="">Please select a course</option> 
+                        <option value="CSS">CSS</option>
+                        <option value="IT">IT</option>
+                        <option value="IS">IS</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                
+                <div class="form-row"> 
+                    <label for="commentInput">Comment:</label>
+                    <textarea name="comment" id="commentInput" placeholder="Write your comment here." rows="4" cols="50"></textarea> 
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree"> I agree to the terms.</label>
+                </div>
+                
+                <div class="form-row"> 
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </fieldset>
+            </main>
+            
+            <footer>
+                &copy; 2024 VUTHY SOK
+            </footer>
+       
+    </form>
+</body>
+</html>

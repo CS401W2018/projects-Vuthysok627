@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .form-row, .check-row {  
@@ -20,7 +21,7 @@ body {
 
 legend {
     padding: 10px;
-    background-color: blue;
+    background-color:red;
     color: white;
 }
 
@@ -28,7 +29,7 @@ input:not([type='submit']), select, textarea {
     padding: 10px;
     font-size: 14px;  
     border-radius: 3px;
-    background-color: blanchedalmond;
+    background-color: rgb(224, 205, 25);
 }
 
 input:not([type='submit']):focus, select:focus, textarea:focus {
@@ -41,6 +42,9 @@ input[type='submit'] {
     color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 3px rgb(200, 200, 200);
+}
+.spacer{
+    width: 150px;
 }
 
 @media only screen and (max-width: 600px) {
