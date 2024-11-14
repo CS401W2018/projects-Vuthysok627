@@ -11,18 +11,22 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up Now!</legend>
 
                 <div class="form-row">
                     <label for="firstnameInput">First Name:</label> 
-                    <input type="text" name="firstname" id="firstnameInput" placeholder="First Name">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
                 </div>
 
                 <div class="form-row">
                     <label for="lastnameInput">Last Name:</label>
-                    <input type="text" name="lastname" id="lastnameInput" placeholder="Last Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="number">Age :</label>
+                <input type="number" name="age" id="age" placeholder="Enter your age">
                 </div>
 
                 <div class="form-row">
@@ -47,7 +51,7 @@
 
                 <div class="form-row">
                     <label for="submitBtn"></label>
-                    <input type="submit" id="submitBtn" value="Sign Up!">
+                    <input type="submit" id="submitBtn" value="Submit">
                 </div>
 
                 <div class="check-row">
@@ -63,7 +67,7 @@
                 <div class="form-row">
                     <label for="state">State:</label>
                     <select name="state" id="state">
-                        <option value="blank"></option>
+                        <option value="blank"> Make Selection</option>
                         <option value="Hawaii">Hawaii</option>
                         <option value="California">California</option>
                         <option value="Utah">Utah</option>
@@ -78,23 +82,54 @@
             </fieldset>
         </form>
 
-        <h2>The form tag has an "action" attribute. What does it do?</h2>
-        <p>The action attribute defines the URL where the form data will be sent for processing when the form is submitted.</p>
-
-        <h2>The form tag has a "method" attribute. What does it do?</h2>
-        <p>The method attribute determines how the form data will be sent to the server. The "POST" method sends data securely, while "GET" sends data in the URL.</p>
-
-        <h2>What is the difference between "Post" and "Get"?</h2>
-    
-        <p>POST sends data in the body of the request, which makes it more secure, especially for sensitive data like passwords. GET appends data to the URL, making it visible in the browser's address bar.</p>
-        <h2>What are different ways to style your form?</h2>
+        <h2>
+            What is JavaScript? How did it get its name?
+        </h2>
         <p>
-          Color, font, background, padding, size...
+            Initially known as LiveScript, Netscape changed the name to JavaScript so they could position it as a companion for the Java language, a product of their partner, Sun Microsystems. 
         </p>
-        <h2>Why does the professor like to use flex?</h2>
-        <p> To make the form in vertical and align with other text.</p>
+        <h2>
+            Using the script tag.
+            Using an external file.
+        </h2>
+        <h2>
+            What was the most popular front-end js library?
+        </h2>
+        <p>
+            React, Angular, Vue and jQuery
+        </p>
+        <h2>
+            React, Angular, Vue. js, and Svelte
+        </h2>
     </main>
 
     <footer> &copy; 2024 VUTHY SOK</footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
+            const age = document.getElementById('age').value;
+            const formData = {
+                firstname: firstname,
+                lastname: lastname,
+                age: age,
+
+            }
+            if(!firstname || !lastname){
+                alert("firstname and last name required!")
+                return;
+            }
+            if (!age || age < 18) {
+                alert("You must be 18 to sign up!");
+                return;
+            }
+            console.log(firstname);
+            console.log(lastname);
+            console.log(age);
+            alert("Your submitted the form!")
+            
+        })
+    </script>
 </body>
 </html>
