@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Example</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
@@ -11,22 +11,24 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post" id="myForm">
+        <div id="message"></div>
+        <form id="myForm">
             <fieldset>
                 <legend>Sign Up Now!</legend>
 
                 <div class="form-row">
-                    <label for="firstnameInput">First Name:</label> 
+                    <label for="firstname">First Name:</label>
                     <input type="text" name="firstname" id="firstname" placeholder="First Name">
                 </div>
 
                 <div class="form-row">
-                    <label for="lastnameInput">Last Name:</label>
+                    <label for="lastname">Last Name:</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Last Name">
                 </div>
+
                 <div class="form-row">
-                    <label for="number">Age :</label>
-                <input type="number" name="age" id="age" placeholder="Enter your age">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Enter your age">
                 </div>
 
                 <div class="form-row">
@@ -36,17 +38,17 @@
 
                 <div class="form-row">
                     <label for="passwordInput">Password:</label>
-                    <input type="password" id="passwordInput" placeholder="Password">
+                    <input type="password" name="password" id="passwordInput" placeholder="Password">
                 </div>
 
                 <div class="form-row">
                     <label for="birthdateInput">Birth Date:</label>
-                    <input type="date" id="birthdateInput">
+                    <input type="date" name="birthdate" id="birthdateInput">
                 </div>
 
                 <div class="form-row">
                     <label for="searchInput">Search:</label>
-                    <input type="search" id="searchInput" placeholder="Search">
+                    <input type="search" name="search" id="searchInput" placeholder="Search">
                 </div>
 
                 <div class="form-row">
@@ -67,7 +69,7 @@
                 <div class="form-row">
                     <label for="state">State:</label>
                     <select name="state" id="state">
-                        <option value="blank"> Make Selection</option>
+                        <option value="blank">Make Selection</option>
                         <option value="Hawaii">Hawaii</option>
                         <option value="California">California</option>
                         <option value="Utah">Utah</option>
@@ -78,58 +80,14 @@
                     <label for="comment">Comment:</label>
                     <textarea name="comment" id="comment" placeholder="Write your comment here"></textarea>
                 </div>
-
             </fieldset>
         </form>
 
-        <h2>
-            What is JavaScript? How did it get its name?
-        </h2>
-        <p>
-            Initially known as LiveScript, Netscape changed the name to JavaScript so they could position it as a companion for the Java language, a product of their partner, Sun Microsystems. 
-        </p>
-        <h2>
-            Using the script tag.
-            Using an external file.
-        </h2>
-        <h2>
-            What was the most popular front-end js library?
-        </h2>
-        <p>
-            React, Angular, Vue and jQuery
-        </p>
-        <h2>
-            React, Angular, Vue. js, and Svelte
-        </h2>
+       <p> 1.AJAX stands for Asynchronous JavaScript and XML, and it's a set of web development technologies that make web applications more responsive to user interaction</p>
+       <p>2. The reason why we put JS code in the seperate file becasue to avode overloading errors and make changing more flexiable.</p>
     </main>
 
-    <footer> &copy; 2024 VUTHY SOK</footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-            const firstname = document.getElementById('firstname').value;
-            const lastname = document.getElementById('lastname').value;
-            const age = document.getElementById('age').value;
-            const formData = {
-                firstname: firstname,
-                lastname: lastname,
-                age: age,
-
-            }
-            if(!firstname || !lastname){
-                alert("firstname and last name required!")
-                return;
-            }
-            if (!age || age < 18) {
-                alert("You must be 18 to sign up!");
-                return;
-            }
-            console.log(firstname);
-            console.log(lastname);
-            console.log(age);
-            alert("Your submitted the form!")
-            
-        })
-    </script>
+    <footer>&copy; 2024 VUTHY SOK</footer>
+    <script src="form.js"></script>
 </body>
 </html>

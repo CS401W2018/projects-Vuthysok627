@@ -37,7 +37,7 @@ input:not([type='submit']):focus, select:focus, textarea:focus {
 
 input[type='submit'] {
     padding: 10px;
-    background-color: blue;
+    background-color: rgb(255, 0, 76);
     color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 3px rgb(200, 200, 200);
