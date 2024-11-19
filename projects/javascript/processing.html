@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="processing.css">
+</head>
+<body>
+    <header>
+        <h1>Let's Sign Up Now!</h1>
+    </header>
+    <main>
+        <div id="message"></div>
+        <form id="myForm">
+            <fieldset>
+                <legend>Sign Up Now!</legend>
+
+                <div class="form-row">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Enter your age">
+                </div>
+
+                <div class="form-row">
+                    <label for="emailInput">Email:</label>
+                    <input type="email" name="email" id="emailInput" placeholder="Email">
+                </div>
+
+                <div class="form-row">
+                    <label for="passwordInput">Password:</label>
+                    <input type="password" name="password" id="passwordInput" placeholder="Password">
+                </div>
+
+                <div class="form-row">
+                    <label for="birthdateInput">Birth Date:</label>
+                    <input type="date" name="birthdate" id="birthdateInput">
+                </div>
+
+                <div class="form-row">
+                    <label for="searchInput">Search:</label>
+                    <input type="search" name="search" id="searchInput" placeholder="Search">
+                </div>
+
+                <div class="form-row">
+                    <label for="submitBtn"></label>
+                    <input type="submit" id="submitBtn" value="Submit">
+                </div>
+
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+              
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">Make Selection</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" placeholder="Write your comment here"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="checkbox" name="agree" value="on" checked> I agree to the terms of condition.</label>
+                </div>
+               
+                
+            </fieldset>
+        </form>
+
+        <div class="container">
+            <div class="column"></div>
+                <figure>
+                    <img src="panda-8608551_1280.jpg" alt="Family Photo">
+                   
+                </figure>
+        </div>
+    </main>
+
+    <footer>&copy; VUTHY SOK 2024</footer>
+    <script src="javascript.js"> </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+header{
+    background-color: brown;
+    padding: 5px
+    width 15px;
+    color: white;
+    text-align: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+.form-row, .check-row {  
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+legend {
+    padding: 10px;
+    background-color: yellowgreen;
+    color: white;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    font-size: 14px;  
+    border-radius: 3px;
+    background-color: rgb(255, 205, 208);
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: rgb(131, 9, 9);
+}
+
+input[type='submit'] {
+    padding: 10px;
+    background-color: rgb(255, 0, 76);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(200, 200, 200);
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+.container{
+    flex-direction: column;
+
+}
+footer{
+    font: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown
+}
+
+    
+
+@media only screen and (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+}
