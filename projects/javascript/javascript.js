@@ -4,6 +4,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const firstname = document.getElementById('firstname').value;
     const lastname = document.getElementById('lastname').value;
     const age = document.getElementById('age').value;
+    const email = document.getElementById('email').value;
     
     if (!firstname || !lastname) {
         alert("First name and Last name are required!");
@@ -13,6 +14,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         alert("You must be 18 to sign up!");
         return;
     }
+
     
     const Data = {
         firstname: firstname,
