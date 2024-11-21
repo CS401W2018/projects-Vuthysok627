@@ -7,14 +7,6 @@ header{
     padding: 3px;
 }
     
-body{
-    background-image: url('istockphoto-470641878-1024x1024.jpg');
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    font-size: larger;
-    
-}
-
 
 .btn{
     background-color: rgb(165, 42, 56);
@@ -39,3 +31,35 @@ nav{
     display: flex;
     color: white;
 }
+#location img{
+    width: 500px;
+    border: white;
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    float: right;
+    font-style: italic;
+    margin: 50px;
+
+  }
+  .location{
+    float: top;
+    width: 30%;
+    padding-left: 15px;
+    font-style: italic;
+    margin: 50px;
+    .location h1{
+        text-align: center;
+    }
+    
+  }
+  aside img{
+    width: 100%;
+  }
+  .left h1{
+    float: right;
+
+  }
+
+  

@@ -1,0 +1,86 @@
+header{
+    background-color: white;
+    font-family: cursive;
+    color: chocolate;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3px;
+    margin: 20px;
+}
+    
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-size: larger;
+    
+}
+
+
+.btn{
+    background-color: rgb(165, 42, 56);
+    color: white;
+    display: block;
+    padding: 0 5px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border: thin solid white;
+    box-shadow: 100%;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(144, 189, 238);
+}
+
+nav{
+    display: flex;
+    color: white;
+}
+
+
+.form-row, .check-row {  
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+legend {
+    padding: 10px;
+    background-color:red;
+    color: white;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 10px;
+    font-size: 14px;  
+    border-radius: 3px;
+    background-color: rgb(224, 205, 25);
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(200, 200, 200);
+}
+.spacer{
+    width: 150px;
+}

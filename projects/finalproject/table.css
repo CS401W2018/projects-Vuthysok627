@@ -8,9 +8,8 @@ header{
 }
     
 body{
-    background-image: url('istockphoto-470641878-1024x1024.jpg');
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    color:red;
     font-size: larger;
     
 }
@@ -38,4 +37,44 @@ body{
 nav{
     display: flex;
     color: white;
+}
+.container{
+    margin: 50px;
+}
+.border{
+    margin: 50px;
+    width: 100%;
+    border: thick solid yellow;
+    border-spacing: 0;
+    caption-side: bottom;
+}
+
+
+.boarder td, .boarder.th{
+    border: thin solid black;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background: lightpink;
+}
+.boarder thead{
+    background-color: brown;
+}
+.boarder tfoot{
+    color: black;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    
+
+}
+.main{
+    width: 80%;
+}
+.aside {
+width: 100%;
+
 }
