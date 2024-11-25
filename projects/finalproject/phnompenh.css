@@ -1,43 +1,124 @@
-header{
-    background-color: white;
-    font-family: cursive;
-    color: chocolate;
-    border-radius: 10px;
-    text-align: center;
-    padding: 3px;
-}
-    
-body{
-   
+/* General Styles */
+body {
     font-family: 'Times New Roman', Times, serif;
-    color: white;
+    color: black;
     font-size: larger;
-    
-}
-
-
-
-
-.btn{
-    background-color: rgb(165, 42, 56);
-    color: white;
-    display: block;
-    padding: 0 5px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: white;
+    color: chocolate;
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  header h2 {
+    color: rgb(125, 43, 226);
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(165, 42, 56);
+  }
+  
+  nav .btn {
+    color: white;
     text-decoration: none;
-    margin: 0 5px;
-    border: thin solid white;
-    box-shadow: 100%;
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-.btn:hover{
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(165, 42, 56);
+    border: 1px solid white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav .btn:hover {
     background-color: rgb(144, 189, 238);
+  }
+  
+  /* Main Content */
+
+/* Main Content Styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
 }
 
-nav{
+.column {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: blue;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column figure figcaption {
+    font-style: oblique;
+    color: red;
+    font-size: larger;
+}
+
+/* Sidebar and Place Styling */
+.place {
+    flex: 1 1 calc(50% - 20px);
     display: flex;
-    color: white;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.place figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.place aside {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    color: black;
+}
+
+.place aside h2 {
+    color: red;
+    font-style: oblique;
+}
+
+/* Footer Styling */
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    font-size: medium;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .place {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }

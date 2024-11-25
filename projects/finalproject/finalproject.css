@@ -1,41 +1,135 @@
-header{
-    background-color: white;
-    font-family: cursive;
-    color: chocolate;
-    border-radius: 10px;
-    text-align: center;
-    padding: 3px;
-}
-    
-body{
-    background-image: url('istockphoto-470641878-1024x1024.jpg');
+/* General Styles */
+body {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     font-size: larger;
-    
-}
-
-
-.btn{
-    background-color: rgb(165, 42, 56);
-    color: white;
-    display: block;
-    padding: 0 5px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: white;
+    color: chocolate;
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  header h2 {
+    color: rgb(125, 43, 226);
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(165, 42, 56);
+  }
+  
+  nav .btn {
+    color: white;
     text-decoration: none;
-    margin: 0 5px;
-    border: thin solid white;
-    box-shadow: 100%;
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-.btn:hover{
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(165, 42, 56);
+    border: 1px solid white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav .btn:hover {
     background-color: rgb(144, 189, 238);
+  }
+/* Container Styles */
+.container {
+    display: flex;
+    margin: 0;
+
+}
+footer {
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: medium;
+  width: auto;
 }
 
-nav{
-    display: flex;
-    color: white;
+figcaption{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    font-size: large;
+    padding: 0 3px;
 }
+
+/* Main Styles */
+main {
+    flex: 1; /* Fill remaining space */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between articles */
+}
+
+article {
+    flex: 1 1 calc(33.333% - 20px); /* Three articles in a row */
+    background: #051451;
+    padding: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+.font{
+    color: black;
+    margin: 15px;
+    bottom: 0;
+
+
+}
+
+.font :hover{
+    background-color: red;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .container{
+       flex-direction: column;
+       
+    }
+       .column {
+           flex-direction: column;
+         }
+       nav{
+   
+           flex-direction: column;
+       }
+       aside {
+           width: 100%; /* Full width on small screens */
+       }
+       aside {
+           flex: 100%;
+           max-width: 100%;
+           order:2;
+         }
+   
+       main {
+           flex-direction: column; /* Stack articles vertically */
+       }
+   
+       article {
+           flex: 100%; /* Full width articles */
+       }
+       footer{
+           text-align: center;
+       }
+       
+   }
+   

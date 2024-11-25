@@ -1,80 +1,111 @@
-header{
-    background-color: white;
-    font-family: cursive;
-    color: chocolate;
-    border-radius: 10px;
-    text-align: center;
-    padding: 3px;
-}
-    
-body{
+/* General Styles */
+body {
     font-family: 'Times New Roman', Times, serif;
-    color:red;
+    color: black;
     font-size: larger;
-    
-}
-
-
-.btn{
-    background-color: rgb(165, 42, 56);
-    color: white;
-    display: block;
-    padding: 0 5px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: white;
+    color: chocolate;
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  header h2 {
+    color: rgb(125, 43, 226);
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(165, 42, 56);
+  }
+  
+  nav .btn {
+    color: white;
     text-decoration: none;
-    margin: 0 5px;
-    border: thin solid white;
-    box-shadow: 100%;
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-.btn:hover{
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(165, 42, 56);
+    border: 1px solid white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav .btn:hover {
     background-color: rgb(144, 189, 238);
+  }
+  
+  /* Main Content */
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    font-size: medium;
 }
 
-nav{
+/* Main Content Styles */
+.container {
     display: flex;
-    color: white;
+    flex-wrap: wrap;
+    margin: 10px auto;
 }
-.container{
-    margin: 50px;
-}
-.border{
-    margin: 50px;
+
+.border {
+    margin: 10px auto;
     width: 100%;
     border: thick solid yellow;
-    border-spacing: 0;
+    border-spacing: 15px;
     caption-side: bottom;
+    padding: 15px;
+    font-size: larger;
 }
 
-
-.boarder td, .boarder.th{
+.border td, .border th {
     border: thin solid black;
     padding: 10px;
 }
 
-tbody tr:nth-child(even) {
-    background: lightpink;
-}
-.boarder thead{
+.border thead {
     background-color: brown;
-}
-.boarder tfoot{
-    color: black;
+    color: white;
 }
 
+.border tbody tr:nth-child(odd) {
+    background-color: lightpink;
+}
+
+.sidebar {
+    flex: 1 1 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+caption{
+    padding: 15px;
+}
+
+/* Responsive Styles */
+/* Responsive Styles */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    sidebar {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
 .container{
-    display: flex;
-    gap: 20px;
-    
-
-}
-.main{
-    width: 80%;
-}
-.aside {
-width: 100%;
-
+    flex-direction: column;
 }
