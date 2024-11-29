@@ -1,12 +1,17 @@
 body {
-    background-color: rgba(13, 133, 163, 0.333);
+    
     font-family:  'Courier New', monospace;
     color: darkgreen;
     font-size: medium;
+    font: black ;
 }
 
-nav {
+nav a {
     color: black;
+    border: 2px solid yellow;
+    text-decoration: none;
+
+
 }
 main {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -16,13 +21,6 @@ main {
     color: gray
 };
  
-
-.green 
-{
-color: green;
-}
-
-
 .bolder {
     color:yellowgreen;
     font-style: italic;
@@ -30,7 +28,3 @@ color: green;
 footer {
     color: blue
  }
-H2 {
-    Color: #F09B59
-
-}

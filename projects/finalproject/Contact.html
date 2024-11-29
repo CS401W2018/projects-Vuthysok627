@@ -22,17 +22,18 @@
     </header>
     <main>
         <div class="position">
-            <form action="processing.html" method="post">
+            <form action="processing.html" method="post" id="myForm">
+
                 <fieldset>
                     <legend>More Question?</legend>
                     <p>Personal Information</p>
                     <div class="form-row"> 
                         <label for="firstnameInput">First Name</label> 
-                        <input type="text" name="firstname" id="firstnameInput" placeholder="First Name" required>
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
                     </div>
                     <div class="form-row"> 
                         <label for="lastnameInput">Last Name</label>
-                        <input type="text" name="lastname" id="lastnameInput" placeholder="Last Name" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
                     </div>
                    
                     <div class="form-row">
@@ -46,7 +47,7 @@
                     </div>
                     <div class="form-row"> 
                         <label for="emailInput">Email Address</label>
-                        <input type="email" name="email" id="emailInput" placeholder="Enter your email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
                    
                     <div class="form-row"> 
@@ -78,6 +79,9 @@
                     </div>
                 </fieldset>
             </form>
+        </div >
+        <div id="message">
+            
         </div>
     </main>
     <footer>

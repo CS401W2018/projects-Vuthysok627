@@ -1,0 +1,13 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav a{
+    display: block;
+    padding: 15px;
+
+}
+.order, .design {
+    border: 1px solid black; /* Correct way to define a border */
+    border-radius: 5px; /* Example of rounded corners */
+    margin: 5px;
+}
