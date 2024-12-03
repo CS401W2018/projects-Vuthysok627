@@ -53,6 +53,10 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+}
+::placeholder{
+    color: white;
 }
 
 fieldset {
@@ -79,7 +83,6 @@ input:not([type='submit']), select, textarea {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgb(224, 205, 25);
 }
 
 input:not([type='submit']):focus, select:focus, textarea:focus {
@@ -111,6 +114,10 @@ footer {
 }
 caption{
     text-align: center;
+}
+p{
+    text-align: center;
+    padding: 5PX;
 }
 
 /* Responsive Design */
