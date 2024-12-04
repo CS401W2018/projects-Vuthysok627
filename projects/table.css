@@ -24,7 +24,6 @@ body {
   nav {
     display: flex;
     justify-content: space-around;
-  
     padding: 10px;
     background-color: rgb(165, 42, 56);
   }
@@ -33,6 +32,7 @@ body {
     color: white;
     text-decoration: none;
     margin: 0;
+    
     
     background-color: rgb(165, 42, 56);
    
@@ -44,79 +44,69 @@ body {
     background-color: rgb(144, 189, 238);
   }
   
+  /* Main Content */
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    font-size: medium;
+}
 
+/* Main Content Styles */
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px;
+    margin: 10px auto;
 }
 
-.column {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: white;
+.border {
+    margin: 10px auto;
+    width: 100%;
+    border: thick solid yellow;
+    border-spacing: 15px;
+    caption-side: bottom;
     padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    color: blue;
-}
-
-.column img {
-    max-width: 100%;
-    height: auto;
-}
-
-.column figure figcaption {
-    font-style: oblique;
-    color: red;
     font-size: larger;
 }
 
-.place {
-    flex: 1 1 calc(50% - 20px);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 0;
-}
-
-.place figure img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.place aside {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    color: black;
-}
-
-.place aside h2 {
-    color: red;
-    font-style: oblique;
-}
-
-
-footer {
-    background-color: lightgray;
-    text-align: center;
+.border td, .border th {
+    border: thin solid black;
     padding: 10px;
-    font-size: medium;
-    color: black;
+}
+
+.border thead {
+    background-color: brown;
+    color: white;
+}
+
+.border tbody tr:nth-child(even) {
+    background-color: lightpink;
+}
+
+.sidebar {
+    flex: 1 1 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+caption{
+    padding: 15px;
 }
 
 
+/* Responsive Styles */
 @media (max-width: 700px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .place {
-        flex-direction: column;
-    }
-
     nav {
         flex-direction: column;
     }
+
+    sidebar {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+container{
+    flex-direction: column;
 }

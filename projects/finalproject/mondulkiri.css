@@ -1,53 +1,55 @@
 /* General Styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: larger;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: larger;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: white;
+  color: chocolate;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header h2 {
+  color: rgb(125, 43, 226);
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px;
+  background-color: rgb(165, 42, 56);
+}
+
+nav .btn {
+  color: white;
+  text-decoration: none;
+  margin: 0;
   
-  /* Header Styles */
-  header {
-    background-color: white;
-    color: chocolate;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-  }
+  background-color: rgb(165, 42, 56);
+ 
+  transition: background-color 0.3s ease-in-out;
   
-  header h2 {
-    color: rgb(125, 43, 226);
-  }
-  
-  /* Navigation Bar */
-  nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    background-color: rgb(165, 42, 56);
-  }
-  
-  nav .btn {
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: rgb(165, 42, 56);
-    border: 1px solid white;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  nav .btn:hover {
-    background-color: rgb(144, 189, 238);
-  }
+}
+
+nav .btn:hover {
+  background-color: rgb(144, 189, 238);
+}
   footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #f4f4f4;
     border-top: 1px solid #ccc;
     margin-top: 20px;
+    color: black;
 }
 .column {
     display: block;

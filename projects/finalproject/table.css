@@ -23,8 +23,7 @@ body {
   /* Navigation Bar */
   nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
     background-color: rgb(165, 42, 56);
   }
@@ -32,11 +31,13 @@ body {
   nav .btn {
     color: white;
     text-decoration: none;
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 0;
+    
+    
     background-color: rgb(165, 42, 56);
-    border: 1px solid white;
+   
     transition: background-color 0.3s ease-in-out;
+    
   }
   
   nav .btn:hover {
@@ -59,13 +60,14 @@ footer {
 }
 
 .border {
-    margin: 10px auto;
-    width: 100%;
+    margin: auto;
     border: thick solid yellow;
     border-spacing: 15px;
     caption-side: bottom;
-    padding: 15px;
+    padding: auto;
     font-size: larger;
+    text-align: center;
+    width: auto;
 }
 
 .border td, .border th {
@@ -91,7 +93,7 @@ caption{
     padding: 15px;
 }
 
-/* Responsive Styles */
+
 /* Responsive Styles */
 @media (max-width: 700px) {
     nav {
@@ -106,6 +108,7 @@ caption{
         text-align: center;
     }
 }
-.container{
-    flex-direction: column;
+.border{
+   
+    width: 100%;
 }

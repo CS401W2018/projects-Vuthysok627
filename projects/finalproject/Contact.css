@@ -23,8 +23,7 @@ body {
   /* Navigation Bar */
   nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
     background-color: rgb(165, 42, 56);
   }
@@ -32,11 +31,13 @@ body {
   nav .btn {
     color: white;
     text-decoration: none;
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 0;
+    
+    
     background-color: rgb(165, 42, 56);
-    border: 1px solid white;
+   
     transition: background-color 0.3s ease-in-out;
+    
   }
   
   nav .btn:hover {
@@ -44,19 +45,19 @@ body {
   }
 
 /* Form Styles */
-.position {
-    max-width: 100%;
+.form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    
-}
-::placeholder{
-    color: white;
+    gap: 15px;
 }
 
 fieldset {
@@ -112,27 +113,15 @@ footer {
     border-top: 1px solid #ccc;
     margin-top: 20px;
 }
-caption{
-    text-align: center;
-}
-p{
-    text-align: center;
-    padding: 5PX;
-}
 
 /* Responsive Design */
 @media (max-width: 700px) {
     nav {
         flex-direction: column;
+        gap: 5px;
     }
 
-    position{
-        flex-direction: column;
+    .form-container {
+        width: 100%;
     }
-    footer{
-    text-align: center;
-    }
-
 }
-
-

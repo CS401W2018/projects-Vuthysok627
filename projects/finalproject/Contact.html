@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
-    <header id="flag">
+    <header>
         <h1 class="welcome">Welcome To Cambodia's HotSpots</h1>
-        <h2> More Question?</h2>
+        <h2>More Questions?</h2>
         <nav>
             <a href="home.html" class="btn">Home</a>
             <a href="Phnompenh.html" class="btn">Phnom Penh</a>
@@ -17,39 +17,36 @@
             <a href="Sihanoukville.html" class="btn">Sihanoukville City</a>
             <a href="Mondulkiri.html" class="btn">Mondulkiri</a>
             <a href="Table.html" class="btn">Statistic</a>
-            <a href="Contact.html" class="btn">Contact</a>
+            Contact
         </nav>
     </header>
     <main>
-        <div class="position">
+        <div class="form-container">
             <form action="processing.html" method="post" id="myForm">
-<p>Let us know if you have more question. </p>
+                <p>Let us know if you have more questions.</p>
                 <fieldset>
                     <legend>Contact Information</legend>
 
                     <div class="form-row"> 
-                        <label for="firstnameInput">First Name</label> 
+                        <label for="firstname">First Name</label> 
                         <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
                     </div>
                     <div class="form-row"> 
-                        <label for="lastnameInput">Last Name</label>
+                        <label for="lastname">Last Name</label>
                         <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
                     </div>
-                   
                     <div class="form-row">
                         <label for="age">Age</label>
                         <input type="number" name="age" id="age" placeholder="Enter your age">
                     </div>
-                  
                     <div class="form-row"> 
                         <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
                     </div>
                     <div class="form-row"> 
-                        <label for="emailInput">Email Address</label>
+                        <label for="email">Email Address</label>
                         <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
-                   
                     <div class="form-row"> 
                         <label>Gender</label>
                         <div>
@@ -69,24 +66,21 @@
                     </div>
                     <div class="form-row"> 
                         <label for="commentInput">Comment:</label>
-                        <textarea name="comment" id="commentInput" placeholder="Write your comment here." rows="4" cols="50"></textarea> 
+                        <textarea name="comment" id="commentInput" placeholder="Write your comment here." rows="4"></textarea> 
                     </div>
                     <div class="check-row">
-                        <label><input type="checkbox" name="agree"> I agree to the terms and condition.</label>
+                        <label><input type="checkbox" name="agree" required> I agree to the terms and conditions.</label>
                     </div>
                     <div class="form-row"> 
                         <input type="submit" value="Submit" id="submit">
                     </div>
                 </fieldset>
             </form>
-        </div >
-        <div id="message">
-            
         </div>
     </main>
     <footer>
         &copy; 2024 VUTHY SOK
     </footer>
-    <script src="finaljavascript.js"> </script>
+    <script src="finaljavascript.js"></script>
 </body>
 </html>
