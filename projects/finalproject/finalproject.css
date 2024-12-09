@@ -1,13 +1,11 @@
-/* General Styles */
-body {
+body{
     font-family: 'Times New Roman', Times, serif;
     color: white;
     font-size: larger;
-    margin: 0;
-    padding: 0;
+    
   }
   
-  /* Header Styles */
+  
   header {
     background-color: white;
     color: chocolate;
@@ -20,7 +18,7 @@ body {
     color: rgb(125, 43, 226);
   }
   
-  /* Navigation Bar */
+  
   nav {
     display: flex;
     justify-content: space-around;
@@ -43,7 +41,7 @@ body {
   nav .btn:hover {
     background-color: rgb(144, 189, 238);
   }
-/* Container Styles */
+
 .container {
     display: flex;
     margin: 0;
@@ -64,7 +62,7 @@ figcaption{
     padding: 0 3px;
 }
 
-/* Main Styles */
+
 main {
     flex: 1; /* Fill remaining space */
     padding: 20px;

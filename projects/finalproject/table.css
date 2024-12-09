@@ -80,7 +80,7 @@ footer {
     color: white;
 }
 
-.border tbody tr:nth-child(even) {
+.border tbody tr:nth-child(odd) {
     background-color: lightpink;
 }
 
